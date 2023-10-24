@@ -1,0 +1,19 @@
+/* checkbox.css */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    border: 50px red;
+    padding: 60px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    /* Your checkbox styles here using Panda CSS classes */
+    color: blue;
+    padding: 50px;
+}
+
+.custom-checkbox label {
+    /* Your label styles here using Panda CSS classes */
+    color: red;
+    padding: 50px;
+}
