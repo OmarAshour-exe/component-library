@@ -3,7 +3,7 @@ import './checkbox.css'; // Import your CSS file
 
 function Checkbox({ label, checked, onChange }) {
     return (
-        <label className="custom-checkbox">
+        <label className="checkbox">
             <input checked={checked} onChange={onChange} type="checkbox" />
             {label}
         </label>
