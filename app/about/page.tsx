@@ -3,17 +3,17 @@ import {css} from "@/styled-system/css"
 import NextBreadcrumb from "@/components/breadcrumbs/Breadcrumbs";
 import Link from "next/link";
 
-export default function Home() {
+export default function Page() {
     return (
         <div>
             <div>
                 <NextBreadcrumb
                     homeElement={'Startseite'}
                     separator={<span> {"/"} </span>}
-                    activeClasses={'Startseite'}
+                    activeClasses={'active-breadcrumb'}
                     capitalizeLinks
                 />
-                <Link legacyBehavior href="/about">go to about</Link>
+                <Link legacyBehavior href={"/"}><a>this is about page</a></Link>
                 <div className={css({fontSize: "2xl", fontWeight: "bold"})}>Hello 🐼!</div>
                 <Checkbox label={"Woooow"} disabled={false}></Checkbox>
             </div>
