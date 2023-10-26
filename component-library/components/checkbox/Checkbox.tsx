@@ -2,15 +2,16 @@ import { CheckboxVariant, checkbox } from '@/styled-system/recipes';
 import React from 'react';
 
 type checkboxProps = CheckboxVariant & {
-    name: string
+    label: string
+    disabled?: boolean
 }
 
 export const Checkbox = (props: checkboxProps) => {
-    const { name } = props
+    const { label ,disabled = false } = props
     return (
-        <label htmlFor={name}>
-            <input name={name} className={checkbox()} type="checkbox"></input>
-            <span>{name}</span>
+        <label htmlFor={label}>
+            <input name={label} className={checkbox()} type="checkbox" disabled={disabled}></input>
+            <span>{label}</span>
         </label>
     )
 }
