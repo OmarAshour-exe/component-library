@@ -5,10 +5,10 @@ export const checkboxRecipe = defineRecipe({
     description: "The Styles for the checkbox component",
     jsx: ["Checkbox"],
     base: {
-        minHeight: "25px",
-        minWidth: "25px",
+        minHeight: "10px",
+        minWidth: "10px",
         cursor: "pointer",
-        margin: "10px",
-        accentColor: "blue"
+        margin: "3px",
+        accentColor: "blue",
     },
 })
