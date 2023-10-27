@@ -10,10 +10,8 @@ export default function Home() {
                 <NextBreadcrumb
                     homeElement={'Startseite'}
                     separator={<span> {"/"} </span>}
-                    activeClasses={'Startseite'}
-                    capitalizeLinks
-                />
-                <Link legacyBehavior href="/about">go to about</Link>
+                    capitalizeLinks/>
+                <Link legacyBehavior href="/about">Go to about</Link>
                 <div className={css({fontSize: "2xl", fontWeight: "bold"})}>Hello 🐼!</div>
                 <Checkbox label={"Woooow"} disabled={false}></Checkbox>
             </div>

@@ -3,22 +3,17 @@
 import React, {ReactNode} from 'react'
 import {usePathname} from 'next/navigation'
 import Link from 'next/link'
+import {breadcrumbs, BreadcrumbsVariant} from "@/styled-system/recipes";
 
-type TBreadCrumbProps = {
+type TBreadCrumbProps = BreadcrumbsVariant & {
     homeElement: ReactNode,
     separator: ReactNode,
-    containerClasses?: string,
-    listClasses?: string,
-    activeClasses?: string,
     capitalizeLinks?: boolean
 }
 
 const NextBreadcrumb = ({
                             homeElement,
                             separator,
-                            containerClasses,
-                            listClasses,
-                            activeClasses,
                             capitalizeLinks
                         }: TBreadCrumbProps) => {
 
@@ -27,17 +22,17 @@ const NextBreadcrumb = ({
 
     return (
         <div>
-            <ul className={containerClasses}>
-                <span className={listClasses}><Link href={'/'}>{homeElement}</Link></span>
+            <ul className={breadcrumbs()}>
+                <span className={pathNames.length === 0 ? breadcrumbs({text: 'bold'}) : ''}><Link
+                    href={'/'}>{homeElement}</Link></span>
                 {pathNames.length > 0 && separator}
                 {
                     pathNames.map((link, index) => {
                         let href = `/${pathNames.slice(0, index + 1).join('/')}`
-                        let itemClasses = paths === href ? `${listClasses} ${activeClasses}` : listClasses
                         let itemLink = capitalizeLinks ? link[0].toUpperCase() + link.slice(1, link.length) : link
                         return (
                             <React.Fragment key={index}>
-                                <span className={itemClasses}>
+                                <span className={breadcrumbs({text: 'bold'})}>
                                     <Link href={href}>{itemLink}</Link>
                                 </span>
                                 {pathNames.length !== index + 1 && separator}

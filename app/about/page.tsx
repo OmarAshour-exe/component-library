@@ -10,10 +10,8 @@ export default function Page() {
                 <NextBreadcrumb
                     homeElement={'Startseite'}
                     separator={<span> {"/"} </span>}
-                    activeClasses={'active-breadcrumb'}
-                    capitalizeLinks
-                />
-                <Link legacyBehavior href={"/"}><a>this is about page</a></Link>
+                    capitalizeLinks/>
+                <Link legacyBehavior href={"/"}><a>Go back to Startseite</a></Link>
                 <div className={css({fontSize: "2xl", fontWeight: "bold"})}>Hello 🐼!</div>
                 <Checkbox label={"Woooow"} disabled={false}></Checkbox>
             </div>
