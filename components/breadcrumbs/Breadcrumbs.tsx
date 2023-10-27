@@ -5,7 +5,7 @@ import {usePathname} from 'next/navigation'
 import Link from 'next/link'
 import {breadcrumbs, BreadcrumbsVariant} from "@/styled-system/recipes";
 
-type TBreadCrumbProps = BreadcrumbsVariant & {
+type TBreadCrumbProps = {
     homeElement: ReactNode,
     separator: ReactNode,
     capitalizeLinks?: boolean
