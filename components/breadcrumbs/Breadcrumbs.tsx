@@ -3,7 +3,7 @@
 import React, {ReactNode} from 'react'
 import {usePathname} from 'next/navigation'
 import Link from 'next/link'
-import {breadcrumbs, BreadcrumbsVariant} from "@/styled-system/recipes";
+import {breadcrumbs} from "@/styled-system/recipes";
 
 type TBreadCrumbProps = {
     homeElement: ReactNode,
