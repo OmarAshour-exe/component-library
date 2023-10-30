@@ -4,3 +4,4 @@ export * from './breadcrumbs';
 export * from './footer';
 export * from './accordion';
 export * from './collapse';
+export * from './dropdown';

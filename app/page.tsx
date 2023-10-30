@@ -5,6 +5,7 @@ import Link from "next/link";
 import Footer from "@/components/footer/Footer";
 import Accordion from "@/components/accordion/Accordion";
 import Collapse from "@/components/collapse/Collapse";
+import Dropdown from "@/components/dropdown/Dropdown";
 
 const items = [
     {
@@ -20,7 +21,7 @@ const items = [
         child: "This is the content of section 3"
     }
 ]
-
+  
 export default function Home() {
     return (
         <div>
@@ -28,11 +29,12 @@ export default function Home() {
                 homeElement={'Startseite'}
                 separator={<span> {"/"} </span>}
                 capitalizeLinks />
-            <Link legacyBehavior href="/about">Go to about</Link>
+            <Link href="/about">Go to about</Link>
             <div className={css({ fontSize: "2xl", fontWeight: "bold" })}>Hello 🐼!</div>
             <Checkbox label={"Woooow"} disabled={false}></Checkbox>
             <Collapse title={"Collapse"}>Heeeeeeeeeeey ich bin die Content von Collapse</Collapse>
             <Accordion items={items} />
+            <Dropdown></Dropdown>
             <Footer text={"What an incredible day. This is Startseite page."} />
         </div>
     )
