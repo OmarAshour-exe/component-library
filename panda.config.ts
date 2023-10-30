@@ -2,6 +2,7 @@ import {defineConfig, defineTokens} from "@pandacss/dev"
 import {checkboxRecipe} from "./components/checkbox/Checkbox.recipe"
 import {breadcrumbsRecipe} from "./components/breadcrumbs/Breadcrumbs.recipe";
 import {footerRecipe} from "@/components/footer/Footer.recipe";
+import { accordionRecipe } from "./components/accordion/Accordion.recipe";
 
 export default defineConfig({
     // Whether to use css reset
@@ -45,6 +46,7 @@ export default defineConfig({
                 checkbox: checkboxRecipe,
                 breadcrumbs: breadcrumbsRecipe,
                 footer: footerRecipe,
+                accordion: accordionRecipe
             },
         },
     },
