@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useState } from 'react';
-import { collapseRecipe } from './Collapse.recipe';
 import { collapse } from '@/styled-system/recipes/collapse';
 
 type CollapseProps = {
