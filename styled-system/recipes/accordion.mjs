@@ -5,8 +5,7 @@ const accordionFn = /* @__PURE__ */ createRecipe('accordion', {}, [])
 
 const accordionVariantMap = {
   "accordion": [
-    "title",
-    "active"
+    "title"
   ]
 }
 

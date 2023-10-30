@@ -5,16 +5,15 @@ export const accordionRecipe = defineRecipe({
     description: "The Styles for the accordion component",
     jsx: ["Accordion"],
     base: {
-        fontWeight: '600',
         color: 'black',
-        margin: '10px',
+        margin: '0 10px',
         backgroundColor: '#e7e9eb',
         padding: '20px',
+        border: '1px solid #606470'
     },
     variants: {
         accordion: {
-            title: { fontWeight: 'bold', cursor: 'pointer', display: 'flex', justifyContent: 'space-between' },
-            active: { backgroundColor: '#e0ebf1', padding: '20px', margin: '10px' }
+            title: { fontWeight: 'bold', cursor: 'pointer' },
         },
     }
 })
