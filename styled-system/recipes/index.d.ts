@@ -5,3 +5,4 @@ export * from './footer';
 export * from './accordion';
 export * from './collapse';
 export * from './dropdown';
+export * from './outputs';
