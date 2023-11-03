@@ -2,9 +2,10 @@ import {defineConfig, defineTokens} from "@pandacss/dev"
 import {checkboxRecipe} from "./components/checkbox/Checkbox.recipe"
 import {breadcrumbsRecipe} from "./components/breadcrumbs/Breadcrumbs.recipe";
 import {footerRecipe} from "@/components/footer/Footer.recipe";
-import { accordionRecipe } from "./components/accordion/Accordion.recipe";
-import { collapseRecipe } from "./components/collapse/Collapse.recipe";
-import { dropDownRecipe } from "./components/dropdown/Dropdown.recipe";
+import {accordionRecipe} from "./components/accordion/Accordion.recipe";
+import {collapseRecipe} from "./components/collapse/Collapse.recipe";
+import {dropDownRecipe} from "./components/dropdown/Dropdown.recipe";
+import {outputsRecipe} from "@/components/outputs/Outputs.recipe";
 
 export default defineConfig({
     // Whether to use css reset
@@ -50,7 +51,8 @@ export default defineConfig({
                 footer: footerRecipe,
                 accordion: accordionRecipe,
                 collapse: collapseRecipe,
-                dropdown: dropDownRecipe
+                dropdown: dropDownRecipe,
+                outputs: outputsRecipe,
             },
         },
     },

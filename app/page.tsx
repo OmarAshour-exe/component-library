@@ -6,6 +6,7 @@ import Footer from "@/components/footer/Footer";
 import Accordion from "@/components/accordion/Accordion";
 import Collapse from "@/components/collapse/Collapse";
 import Dropdown from "@/components/dropdown/Dropdown";
+import Outputs from "@/components/outputs/Outputs";
 
 const items = [
     {
@@ -21,6 +22,8 @@ const items = [
         child: "This is the content of section 3"
     }
 ]
+
+const items1 = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
   
 export default function Home() {
     return (
@@ -35,6 +38,7 @@ export default function Home() {
             <Collapse title={"Collapse"}>Heeeeeeeeeeey ich bin die Content von Collapse</Collapse>
             <Accordion items={items} />
             <Dropdown></Dropdown>
+            <Outputs items={items1}></Outputs>
             <Footer text={"What an incredible day. This is Startseite page."} />
         </div>
     )
