@@ -6,6 +6,7 @@ import {accordionRecipe} from "./components/accordion/Accordion.recipe";
 import {collapseRecipe} from "./components/collapse/Collapse.recipe";
 import {dropDownRecipe} from "./components/dropdown/Dropdown.recipe";
 import {outputsRecipe} from "@/components/outputs/Outputs.recipe";
+import {modalRecipe} from "@/components/modal/Modal.recipe";
 
 export default defineConfig({
     // Whether to use css reset
@@ -53,6 +54,7 @@ export default defineConfig({
                 collapse: collapseRecipe,
                 dropdown: dropDownRecipe,
                 outputs: outputsRecipe,
+                modal: modalRecipe
             },
         },
     },
