@@ -1,3 +1,4 @@
+'use client'
 import { Checkbox } from "@/components/checkbox/Checkbox"
 import { css } from "@/styled-system/css"
 import NextBreadcrumb from "@/components/breadcrumbs/Breadcrumbs";
@@ -7,6 +8,8 @@ import Accordion from "@/components/accordion/Accordion";
 import Collapse from "@/components/collapse/Collapse";
 import Dropdown from "@/components/dropdown/Dropdown";
 import Outputs from "@/components/outputs/Outputs";
+import Modal from "@/components/modal/Modal";
+import {useState} from "react";
 
 const items = [
     {
@@ -26,6 +29,15 @@ const items = [
 const items1 = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
   
 export default function Home() {
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => {
+        setModalOpen(true);
+    }
+
+    const closeModal = () => {
+        setModalOpen(false);
+    }
     return (
         <div>
             <NextBreadcrumb
@@ -39,6 +51,13 @@ export default function Home() {
             <Accordion items={items} />
             <Dropdown></Dropdown>
             <Outputs items={items1}></Outputs>
+            <div>
+                <button onClick={openModal}>Open Modal</button>
+                <Modal isOpen={isModalOpen} onClose={closeModal}>
+                    <Dropdown></Dropdown>
+                    <p>This is the content of the modal.</p>
+                </Modal>
+            </div>
             <Footer text={"What an incredible day. This is Startseite page."} />
         </div>
     )

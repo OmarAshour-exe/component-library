@@ -6,3 +6,4 @@ export * from './accordion';
 export * from './collapse';
 export * from './dropdown';
 export * from './outputs';
+export * from './modal';

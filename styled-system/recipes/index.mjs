@@ -5,3 +5,4 @@ export * from './accordion.mjs';
 export * from './collapse.mjs';
 export * from './dropdown.mjs';
 export * from './outputs.mjs';
+export * from './modal.mjs';
