@@ -10,11 +10,12 @@ export const outputsRecipe = defineRecipe({
         margin: '0 10px',
         backgroundColor: '#e7e9eb',
         padding: '15px',
+        border: '1px solid #c7ccd1'
     },
     variants: {
         output: {
-            li: { backgroundColor: '#e0ebf1', borderBottom: '1px solid black' },
-            secli: { backgroundColor: '#FBD2BE', borderBottom: '1px solid black' }
+            li: { backgroundColor: '#edf4f7', borderBottom: '1px solid #95bbd0', borderTop: '1px solid #95bbd0' },
+            secli: { backgroundColor: '#f1f2f3', borderBottom: '1px solid #c7ccd1', borderTop: '1px solid #c7ccd1' }
         },
     }
 })
